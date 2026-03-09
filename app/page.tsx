@@ -274,7 +274,7 @@ export default function Home() {
                            <Button asChild size="lg" className="h-16 px-10 rounded-2xl bg-primary text-black hover:bg-white hover:scale-105 transition-all font-black uppercase tracking-[0.2em] shadow-[0_20px_40px_-10px_rgba(239,68,68,0.4)] text-xs">
                              <Link href="/services">Get Started</Link>
                            </Button>
-                           <Button asChild variant="outline" size="lg" className="h-16 px-10 rounded-2xl border-2 border-white/10 text-white backdrop-blur-sm hover:bg-primary/20 hover:border-primary/40 transition-all font-black uppercase tracking-[0.2em] text-xs">
+                           <Button asChild variant="outline" size="lg" className="h-16 px-10 rounded-2xl border-2 border-slate-200 text-slate-900 backdrop-blur-sm hover:bg-primary hover:border-primary transition-all font-black uppercase tracking-[0.2em] text-xs">
                              <Link href="/products">The Collection</Link>
                            </Button>
                          </div>

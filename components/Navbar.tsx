@@ -145,19 +145,6 @@ export default function Navbar() {
 
           {/* Right Actions */}
           <div className="flex items-center gap-6 shrink-0 ml-auto xl:ml-0">
-            {/* Search Icon */}
-            <button className={`hidden sm:flex items-center justify-center w-12 h-12 rounded-2xl transition-all border ${scrolled ? "text-slate-400 border-slate-100 hover:bg-slate-50" : "text-slate-900 border-slate-100 hover:bg-slate-50"}`}>
-              <Search className="w-5 h-5" />
-            </button>
-
-            {/* Cart */}
-            <Link href="/cart" className={`flex items-center justify-center w-12 h-12 rounded-2xl transition-all border relative group ${scrolled ? "text-slate-400 border-slate-100 hover:bg-slate-50" : "text-slate-900 border-slate-100 hover:bg-slate-50"}`}>
-              <ShoppingCart className="w-5 h-5 group-hover:scale-110 transition-transform" />
-              <span className="absolute -top-1.5 -right-1.5 bg-primary text-black font-black text-[9px] w-5 h-5 rounded-lg flex items-center justify-center border-2 border-white">
-                0
-              </span>
-            </Link>
-
             {/* User Auth */}
             <div className={`hidden md:flex items-center ml-2 border-l pl-8 ${scrolled ? "border-slate-100" : "border-slate-100"}`}>
               {session?.user ? (
@@ -226,15 +213,6 @@ export default function Navbar() {
             className="xl:hidden fixed inset-x-0 top-[75px] bg-white z-[90] overflow-y-auto flex flex-col"
           >
             <div className="container mx-auto px-8 py-12 flex flex-col gap-8">
-              {/* Mobile Search */}
-              <div className="relative w-full">
-                <Search className="absolute left-6 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                <input
-                  type="text"
-                  placeholder="Find your part..."
-                  className="w-full h-16 pl-16 pr-6 bg-slate-50 border border-slate-100 rounded-2xl text-[16px] text-slate-900 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all font-bold placeholder:text-slate-400"
-                />
-              </div>
 
               {/* Mobile Links */}
               <nav className="flex flex-col gap-4 mt-6">
