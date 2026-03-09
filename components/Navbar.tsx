@@ -76,23 +76,23 @@ export default function Navbar() {
 
   return (
     <header 
-      className={`sticky top-0 z-[100] w-full transition-all duration-500 bg-white border-b border-slate-100 py-4 ${
+      className={`sticky top-0 z-[100] w-full transition-all duration-500 bg-white border-b border-slate-100 py-3 sm:py-4 ${
         scrolled 
-          ? "backdrop-blur-2xl shadow-xl shadow-black/5" 
-          : ""
+          ? "backdrop-blur-2xl shadow-xl shadow-black/5 sm:py-3" 
+          : "sm:py-6"
       }`}
     >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between gap-12">
           
           {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0">
-            <div className={`relative transition-all duration-300 ${scrolled ? "h-14 w-44" : "h-24 w-64"}`}>
+          <Link href="/" className="flex items-center shrink-0 group">
+            <div className={`relative transition-all duration-300 ${scrolled ? "h-10 w-32 sm:h-14 sm:w-44" : "h-14 w-44 sm:h-24 sm:w-64"}`}>
               <Image 
                 src="/wheelwork-logo.png" 
                 alt="Wheelworx Logo" 
                 fill 
-                className="object-contain" 
+                className="object-contain transition-transform duration-300 group-hover:scale-105" 
                 priority
               />
             </div>
