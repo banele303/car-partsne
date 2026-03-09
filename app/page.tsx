@@ -221,8 +221,8 @@ export default function Home() {
             </div>
 
             {/* CENTER — THE MAIN STAGE SLIDER */}
-            <div className="col-span-12 xl:col-span-7">
-              <div className="relative w-full aspect-[16/9] rounded-[48px] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] bg-black">
+            <div className="col-span-12 xl:col-span-7 font-display">
+              <div className="relative w-full aspect-[4/5] md:aspect-[16/9] rounded-[48px] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] bg-black">
                 
                 <div className="absolute inset-0 z-0">
                   <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/30 z-20" />
@@ -247,7 +247,7 @@ export default function Home() {
                     />
                     
                     {/* Content Layer */}
-                    <div className="relative z-30 h-full flex flex-col justify-center p-12 lg:p-24">
+                    <div className="relative z-30 h-full flex flex-col justify-center px-8 py-12 lg:p-24">
                       <motion.div
                         initial={{ x: -50, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
