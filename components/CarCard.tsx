@@ -62,7 +62,7 @@ export default function CarCard({ car }: { car: Car }) {
   };
 
   return (
-    <Link href={`/products/${car._id}`} className="block group">
+    <Link href={`/inventory/${car._id}`} className="block group">
       <motion.div
         whileHover={{ y: -6 }}
         className="relative bg-white border border-slate-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl h-full flex flex-col"
@@ -123,14 +123,14 @@ export default function CarCard({ car }: { car: Car }) {
               </h3>
             </div>
             <div className="text-right">
-               <span className="text-[10px] font-bold text-slate-400 uppercase block mb-0.5">Pricing</span>
+               <span className="text-[10px] font-bold text-slate-500 uppercase block mb-0.5">Pricing</span>
                <div className="text-base font-black text-primary">
                  CALL US
                </div>
             </div>
           </div>
 
-          <p className="text-sm text-slate-600 mb-6 font-medium">
+          <p className="text-sm text-slate-700 mb-6 font-medium">
              Premium {car.year} specification {car.make} unit with guaranteed fitment performance and technical certification.
           </p>
 
@@ -138,11 +138,11 @@ export default function CarCard({ car }: { car: Car }) {
             <div className="flex flex-wrap gap-x-4 gap-y-2">
                <div className="flex items-center gap-1.5">
                   <Package className="h-4 w-4 text-primary" />
-                  <span className="text-[11px] font-bold uppercase text-slate-600">In Stock</span>
+                  <span className="text-[11px] font-bold uppercase text-slate-700">In Stock</span>
                </div>
                <div className="flex items-center gap-1.5">
                   <ShieldCheck className="h-4 w-4 text-primary" />
-                  <span className="text-[11px] font-bold uppercase text-slate-600">Guaranteed</span>
+                  <span className="text-[11px] font-bold uppercase text-slate-700">Guaranteed</span>
                </div>
             </div>
             

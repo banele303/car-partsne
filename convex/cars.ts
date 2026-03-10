@@ -17,7 +17,9 @@ export const getAll = query({
     let filteredCars = cars;
     if (args.make && args.make !== "all") {
       filteredCars = cars.filter(
-        (car) => car.make.toLowerCase() === args.make!.toLowerCase()
+        (car) => 
+          car.make.toLowerCase() === args.make!.toLowerCase() || 
+          (car.bodyType && car.bodyType.toLowerCase() === args.make!.toLowerCase())
       );
     }
 

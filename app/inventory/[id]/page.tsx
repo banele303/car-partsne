@@ -55,7 +55,7 @@ export default function ProductDetailPage() {
            <h1 className="text-4xl font-black text-slate-900 mb-4 uppercase italic">Part Not Found</h1>
            <p className="text-slate-500 font-medium italic mb-10">This component may have been sold or decommissioned from our active inventory.</p>
            <Button asChild className="rounded-full px-12 h-14 bg-slate-900 border-none font-bold uppercase tracking-widest text-xs">
-              <Link href="/products">Return to Catalog</Link>
+              <Link href="/inventory">Return to Catalog</Link>
            </Button>
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function ProductDetailPage() {
       <div className="pt-32 container mx-auto px-6">
         {/* Navigation Breadcrumb */}
         <div className="flex items-center gap-4 mb-12">
-           <Link href="/products" className="group flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 hover:text-primary transition-colors">
+           <Link href="/inventory" className="group flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 hover:text-primary transition-colors">
               <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" /> Back to Catalog
            </Link>
            <div className="h-1 w-1 bg-slate-200 rounded-full" />
@@ -136,7 +136,7 @@ export default function ProductDetailPage() {
                     <Settings className="h-5 w-5 text-primary" /> Technical Profile
                  </h3>
                  <p className="text-lg text-slate-500 font-medium italic leading-relaxed mb-8">
-                    {product.description || `This high-performance ${product.make} component is engineered for precision fitment and long-term durability. Sourced from verified supply chains and technically inspected at our Hercules hub.`}
+                    {product.description || `This high-performance ${product.make} component is engineered for precision fitment and long-term durability. Sourced from verified supply chains and technically inspected at our Woodstock hub.`}
                  </p>
                  
                  {product.features && product.features.length > 0 && (
@@ -186,7 +186,7 @@ export default function ProductDetailPage() {
                     <div className="bg-white p-6 md:p-8">
                        <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 block mb-2">Inventory</span>
                        <p className="text-sm font-black text-green-600 uppercase tracking-tight flex items-center gap-2">
-                          <Package className="h-4 w-4" /> {product.isAvailable ? "IN HERCULES" : "OUT OF STOCK"}
+                          <Package className="h-4 w-4" /> {product.isAvailable ? "IN WOODSTOCK" : "OUT OF STOCK"}
                        </p>
                     </div>
                  </div>
@@ -194,16 +194,16 @@ export default function ProductDetailPage() {
                  {/* Action Stack */}
                  <div className="space-y-4 pt-6">
                     <Button asChild size="xl" className="w-full h-20 rounded-[28px] btn-primary-new text-xl shadow-2xl transition-all">
-                       <a href={`https://wa.me/27614403483?text=I'm interested in the ${product.make} ${product.model} (${product.year}). Is it still available?`} target="_blank" rel="noopener noreferrer">
+                       <a href={`https://wa.me/27791799149?text=I'm interested in the ${product.make} ${product.model} (${product.year}). Is it still available?`} target="_blank" rel="noopener noreferrer">
                           <MessageCircle className="mr-4 h-7 w-7" /> WHATSAPP QUOTE
                        </a>
                     </Button>
                     <div className="grid grid-cols-2 gap-4">
                        <Button asChild variant="outline" className="h-16 rounded-[24px] border-2 border-slate-100 font-black uppercase tracking-widest text-xs hover:bg-slate-50">
-                          <a href={`tel:+27614403483`}><Phone className="mr-3 h-4 w-4" /> CALL DESK</a>
+                          <a href={`tel:0114937010`}><Phone className="mr-3 h-4 w-4" /> CALL DESK</a>
                        </Button>
                        <Button asChild variant="outline" className="h-16 rounded-[24px] border-2 border-slate-100 font-black uppercase tracking-widest text-xs hover:bg-slate-50">
-                          <a href={`mailto:masenyaautoparts@gmail.com?subject=Inquiry: ${product.make} ${product.model}`}><Mail className="mr-3 h-4 w-4" /> EMAIL US</a>
+                          <a href={`mailto:sales@commercialgroup.co.za?subject=Inquiry: ${product.make} ${product.model}`}><Mail className="mr-3 h-4 w-4" /> EMAIL US</a>
                        </Button>
                     </div>
                  </div>
@@ -238,7 +238,7 @@ export default function ProductDetailPage() {
       <section className="container mx-auto px-6 mt-40">
          <div className="flex items-center justify-between mb-12">
             <h2 className="text-4xl font-black tracking-tighter text-slate-900 italic uppercase">SIMILAR <span className="gradient-text not-italic">COMPONENTS.</span></h2>
-            <Link href="/products" className="text-[10px] font-black uppercase tracking-widest text-primary hover:underline underline-offset-8">Explore Catalog</Link>
+            <Link href="/inventory" className="text-[10px] font-black uppercase tracking-widest text-primary hover:underline underline-offset-8">Explore Catalog</Link>
          </div>
          <div className="grid md:grid-cols-3 gap-10 opacity-50 pointer-events-none grayscale">
             {[1,2,3].map(i => (

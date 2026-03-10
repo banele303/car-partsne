@@ -7,32 +7,32 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 import ClientNavbar from "@/components/ClientNavbar";
 export const metadata: Metadata = {
-  title: "Wheelworx | Rim & Mag Repairs, Tyres & Body Work Cape Town",
+  title: "Commercial Auto Parts Group | Taxi, Bakkie & Car Spares Specialists",
   description:
-    "Wheelworx: Cape Town's premier rim and mag repair specialists. Offering expert tyre sales, mag sales, dent removal, bumper repairs, and minor body work repairs at 80 Sir Lowry Road.",
+    "Your one-stop spares shop for Taxi, Bakkie, and Car parts. We specialize in stripping for spares, SABS approved products, and imported engines. Getting you back on the road. Fast!",
   keywords: [
-    "rim repairs cape town",
-    "mag repair south africa",
-    "tyre sales cape town",
-    "dent removal cape town",
-    "bumper repairs cape town",
-    "Wheelworx",
-    "wheel repair service",
+    "commercial auto parts",
+    "taxi spares south africa",
+    "bakkie stripping for spares",
+    "car parts johannesburg",
+    "radiator centre",
+    "engines for africa",
+    "TPC logistics",
   ],
-  authors: [{ name: "Wheelworx" }],
+  authors: [{ name: "Commercial Auto Parts Group" }],
   openGraph: {
-    title: "Wheelworx | Rim & Mag Repairs, Tyres & Body Work",
+    title: "Commercial Auto Parts Group | Taxi, Bakkie & Car Spares",
     description:
-      "Premier rim and mag repair specialists in Cape Town. Expert dent removal, bumper repairs, and tyre sales.",
+      "One-stop shop for automotive spares. Bakkie stripping, taxi parts, car components, and imported engines. SABS approved.",
     type: "website",
     locale: "en_ZA",
-    siteName: "Wheelworx",
+    siteName: "Commercial Auto Parts Group",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wheelworx | Rim & Mag Repairs, Tyres & Body Work",
+    title: "Commercial Auto Parts Group | Spares Specialists",
     description:
-      "Premier rim and mag repair specialists in Cape Town. Expert dent removal, bumper repairs, and tyre sales.",
+      "Complete range of vehicle spares. Bakkie stripping, taxi parts, and imported engines. Getting you back on the road fast!",
   },
   robots: {
     index: true,
@@ -63,19 +63,23 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Wheelworx Rim & Mag Repairs",
-              "image": "/wheelwork-logo.png",
-              "phone": "+27 76 352 6616",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "80 Sir Lowry Road",
-                "addressLocality": "Cape Town",
-                "postalCode": "8001",
-                "addressCountry": "ZA"
-              },
-              "description": "Premier rim and mag repair specialists in Cape Town. Expert dent removal, bumper repairs, and tyre sales.",
-              "url": "https://wheelworx.co.za"
+              "@type": "Organization",
+              "name": "Commercial Auto Parts Group of Companies",
+              "alternateName": "Commercial Auto Parts",
+              "url": "https://commercialautoparts.co.za",
+              "logo": "/new-parts.png",
+              "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "011-493-7010",
+                "contactType": "customer service",
+                "areaServed": "ZA",
+                "availableLanguage": "English"
+              }],
+              "sameAs": [
+                "https://www.facebook.com/commercialautoparts",
+                "https://www.instagram.com/commercialautoparts",
+                "https://www.linkedin.com/company/commercialautoparts"
+              ]
             })
           }}
         />
