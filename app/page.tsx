@@ -179,7 +179,7 @@ export default function Home() {
               <div className="relative w-full aspect-[4/5] md:aspect-[16/9] rounded-[48px] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] bg-black">
                 
                 <div className="absolute inset-0 z-0">
-                  <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/30 z-20" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/50 to-transparent z-20" />
                 </div>
 
                 <AnimatePresence mode="wait">
@@ -195,7 +195,7 @@ export default function Home() {
                       src={heroSlides[currentSlide].image}
                       alt="Hero slide"
                       fill
-                      className="object-cover opacity-40 hover:scale-110 transition-transform duration-10000"
+                      className="object-cover hover:scale-110 transition-transform duration-10000"
                       priority
                     />
                     
