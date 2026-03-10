@@ -159,14 +159,14 @@ export default function Home() {
             {/* LEFT SIDEBAR — Group Showcase */}
             <div className="hidden xl:flex col-span-2 flex-col gap-4">
                <div className="relative flex-1 bg-slate-900 rounded-[32px] overflow-hidden group">
-                  <Image src="/taxi-commercial.png" alt="Taxi" fill className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" />
+                  <Image src="/sidebar-taxi.png" alt="Taxi" fill className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent flex flex-col justify-end p-6 text-left">
                      <span className="text-primary font-black uppercase text-[10px] tracking-widest mb-1">Commercial</span>
                      <h4 className="text-white font-black text-lg leading-tight uppercase">TAXI<br />SPARES.</h4>
                   </div>
                </div>
                <div className="relative flex-1 bg-slate-900 rounded-[32px] overflow-hidden group">
-                  <Image src="/bakkie-stripping-commercial.png" alt="Bakkie" fill className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" />
+                  <Image src="/sidebar-bakkie.png" alt="Bakkie" fill className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent flex flex-col justify-end p-6 text-left">
                      <span className="text-primary font-black uppercase text-[10px] tracking-widest mb-1">Commercial</span>
                      <h4 className="text-white font-black text-lg leading-tight uppercase">BAKKIE<br />CENTRE.</h4>
@@ -226,7 +226,7 @@ export default function Home() {
                            <Button asChild size="lg" className="h-16 px-10 rounded-2xl bg-primary text-black hover:bg-white hover:scale-105 transition-all font-black uppercase tracking-[0.2em] text-xs">
                              <Link href="/contact">Call Now</Link>
                            </Button>
-                           <Button asChild variant="outline" size="lg" className="h-16 px-10 rounded-2xl border-2 border-white/20 text-white backdrop-blur-sm hover:bg-white hover:text-black transition-all font-black uppercase tracking-[0.2em] text-xs">
+                           <Button asChild variant="ghost" size="lg" className="h-16 px-10 rounded-2xl border-2 border-white/20 text-white backdrop-blur-sm hover:bg-white hover:text-black transition-all font-black uppercase tracking-[0.2em] text-xs">
                              <Link href="/bakkie-spares">View Stripping</Link>
                            </Button>
                          </div>
@@ -274,7 +274,7 @@ export default function Home() {
             {/* RIGHT SIDEBAR — Sister Companies */}
             <div className="hidden lg:flex col-span-3 flex-col gap-4">
               <div className="flex-1 rounded-[40px] bg-slate-900 border border-primary/10 overflow-hidden relative group cursor-pointer shadow-xl hover:border-primary/40 transition-all text-left">
-                  <Image src="/engine.png" alt="Engines" fill className="object-cover group-hover:scale-110 transition-transform duration-700 opacity-60" />
+                  <Image src="/hero-engines.png" alt="Engines" fill className="object-cover group-hover:scale-110 transition-transform duration-700 opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent p-10 flex flex-col justify-end">
                     <span className="text-primary font-black uppercase text-[10px] tracking-widest mb-2 block">Sister Company</span>
                     <h3 className="text-3xl font-black text-white uppercase italic leading-[0.9] mb-4">ENGINES<br />FOR AFRICA.</h3>
@@ -284,7 +284,7 @@ export default function Home() {
                   </div>
               </div>
               <div className="flex-1 rounded-[40px] bg-slate-50 border border-primary/10 overflow-hidden relative group cursor-pointer shadow-sm hover:border-primary/40 transition-all text-left">
-                  <Image src="/shipping-logistics.png" alt="TPC" fill className="object-cover group-hover:scale-110 transition-transform duration-700 opacity-40 mix-blend-multiply" />
+                  <Image src="/sidebar-logistics.png" alt="TPC" fill className="object-cover group-hover:scale-110 transition-transform duration-700 opacity-40 mix-blend-multiply" />
                   <div className="absolute inset-0 p-10 flex flex-col justify-end">
                     <span className="text-slate-400 font-black uppercase text-[10px] tracking-widest mb-2 block">Sister Company</span>
                     <h3 className="text-3xl font-black text-slate-900 uppercase italic leading-[0.9] mb-4">TPC<br />LOGISTICS.</h3>
