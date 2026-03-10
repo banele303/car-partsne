@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { motion } from "framer-motion";
+import { useRouter, useSearchParams } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import { Suspense, useEffect } from "react";
 import Image from "next/image";
 import { signIn, signUp } from "@/lib/auth-client";
 import { Button } from "@/components/ui/button";
@@ -21,8 +22,19 @@ import {
 } from "lucide-react";
 
 export default function LoginContent() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="w-10 h-10 border-4 border-primary border-t-transparent rounded-full animate-spin" /></div>}>
+      <LoginForm />
+    </Suspense>
+  );
+}
+
+function LoginForm() {
   const router = useRouter();
-  const [isSignUp, setIsSignUp] = useState(false);
+  const searchParams = useSearchParams();
+  const mode = searchParams.get("mode");
+  
+  const [isSignUp, setIsSignUp] = useState(mode === "signup");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
@@ -30,6 +42,14 @@ export default function LoginContent() {
     email: "",
     password: "",
   });
+
+  useEffect(() => {
+    if (mode === "signup") {
+      setIsSignUp(true);
+    } else if (mode === "login") {
+      setIsSignUp(false);
+    }
+  }, [mode]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

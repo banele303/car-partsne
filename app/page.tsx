@@ -48,7 +48,7 @@ const heroSlides = [
     title: "BAKKIE",
     subtitle: "FOR STRIPPING",
     desc: "Huge range of Ford Rangers, Hiluxes and more currently stripping for spares. Getting you back on the road. Fast!",
-    image: "/car-body.png",
+    image: "/hero-bakkie.png",
     tag: "Wide Selection",
     accent: "text-primary"
   },
@@ -56,7 +56,7 @@ const heroSlides = [
     title: "TAXI",
     subtitle: "SPARES SPECIALIST",
     desc: "The largest inventory of Quantum and taxi spares in the region. SABS approved products at affordable prices.",
-    image: "/new-parts.png",
+    image: "/hero-taxi.png",
     tag: "Commercial Auto Parts",
     accent: "text-primary"
   },
@@ -64,7 +64,7 @@ const heroSlides = [
     title: "ENGINES",
     subtitle: "FOR AFRICA",
     desc: "Quality imported engines with guaranteed performance. Trusted by thousands of mechanics nationwide.",
-    image: "/engine.png",
+    image: "/hero-engines.png",
     tag: "Sister Company",
     accent: "text-primary"
   }
@@ -211,9 +211,9 @@ export default function Home() {
                            {heroSlides[currentSlide].tag}
                          </div>
                          
-                         <h2 className="text-5xl md:text-8xl font-black text-white italic leading-[0.85] mb-6 tracking-[-0.04em]">
+                         <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white italic leading-[0.9] mb-6 tracking-[-0.04em]">
                            {heroSlides[currentSlide].title}<br />
-                           <span className="text-primary not-italic block mt-2">
+                           <span className="text-primary not-italic block mt-1">
                              {heroSlides[currentSlide].subtitle}
                            </span>
                          </h2>
